@@ -1,7 +1,7 @@
 module Main exposing (main)
 
 import Browser
-import Html exposing (input, table, tbody, td, th, thead, tr)
+import Html exposing (table, tbody, td, th, thead, tr, div, button)
 import Html.Attributes exposing (checked, class, type_)
 import Html.Events exposing (onClick)
 import Set
@@ -97,9 +97,12 @@ update msg model =
 
 view : Model -> Html.Html Msg
 view m =
-    table []
-        [ thead [] headrow
-        , tbody [] <| List.map (rankRow m) ranks
+    div []
+        [ table []
+            [ thead [] headrow
+            , tbody [] <| List.map (rankRow m) ranks
+            ]
+        , button [onClick Reset] [Html.text "Reset"]
         ]
 
 
