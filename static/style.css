@@ -1,0 +1,41 @@
+.club {
+    color: #93b17a;
+}
+
+.diamond {
+    color: #e5b368;
+}
+
+.heart {
+    color: #e47652;
+}
+
+.spade {
+    color: #4c98ca;
+}
+
+body {
+    font-size: 14pt;
+}
+
+#app {
+    display: flex;
+    justify-content: space-around;
+}
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    border-top: 1px solid gray;
+}
+
+td {
+    padding: 0.2em;
+}
+
+#signature {
+    text-align: center;
+    font-size: 10pt;
+    color: gray;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TrackSuit</title>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+    <script src="app.js">
+    </script>
+</head>
+
+<body>
+    <div id="app">
+        <div id="target"></div>
+    </div>
+    <p id="signature">A card-counting tool by <a href="https://nathanielknight.ca">Nathaniel Knight</a>.</p>
+    <script>
+        let e = document.getElementById("target");
+        Elm.Main.init({ node: e });
+    </script>
+</body>
+
+</html>
